@@ -1,0 +1,39 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Mocha Tests",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/TypeScriptSample4/node_modules/.bin/mocha",
+        "args": [
+            "--require",
+            "ts-node/register",
+            "${workspaceFolder}/TypeScriptSample4/test/*.ts",
+            "--timeout",
+            "999999"
+        ],
+        "cwd": "${workspaceFolder}/TypeScriptSample4",
+        "internalConsoleOptions": "openOnSessionStart",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "env": {
+            "NODE_ENV": "test"
+        }
+    },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/TypeScriptSample4/app.js",
+            "sourceMaps": true,
+            
+            "skipFiles": [
+                "<node_internals>/**"
+            ],  
+        },       
+    ]
+}

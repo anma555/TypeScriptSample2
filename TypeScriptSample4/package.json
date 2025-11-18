@@ -1,0 +1,21 @@
+{
+  "name": "typescritptsample4",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "types": "./app.d.ts",
+  "scripts": {
+    "test": "mocha test/*.ts --require ts-node/register"
+  },
+  "dependencies": {
+    "mocha": "^11.7.5"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2"
+  }
+}
